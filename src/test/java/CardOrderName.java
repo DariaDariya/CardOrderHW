@@ -15,24 +15,18 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CardOrderName {
-    private WebDriver driver;
-    private static ChromeOptions options;
+    private static WebDriver driver;
 
     @BeforeAll
 
     static void setUpAll() {
         /*System.setProperty("webdriver.chrome.driver", "./driver/win/chromedriver.exe");*/
         WebDriverManager.chromedriver().setup();
-        options = new ChromeOptions();
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--no-sandbox");
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-    }
-
-    @BeforeEach
-    void setUp() {
         driver = new ChromeDriver(options);
     }
+
 
     @AfterEach
     void tearDown() {
