@@ -42,8 +42,8 @@ public class CardOrderName {
 
     @Test
     void shouldTestCSS() {
-        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
-        String title = driver.getTitle();
+        /*driver.get("https://bonigarcia.dev/selenium-webdriver-java/");*/
+        /*String title = driver.getTitle();*/
         driver.get("http://localhost:7777");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Иван Иванов-Иванов");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+79999999999");
