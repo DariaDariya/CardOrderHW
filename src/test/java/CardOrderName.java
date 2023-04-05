@@ -21,7 +21,7 @@ public class CardOrderName {
     @BeforeAll
 
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "./driver/win/chromedriver.exe");
+        /*System.setProperty("webdriver.chrome.driver", "./driver/win/chromedriver.exe");*/
         WebDriverManager.chromedriver().setup();
         options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
