@@ -32,7 +32,7 @@ public class CardOrderName {
 
     @Test
     void shouldTestCSS() {
-        driver.get("http://localhost:7777");
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Иван Иванов-Иванов");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
